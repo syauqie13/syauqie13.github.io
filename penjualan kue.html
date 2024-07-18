@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <h1>Macam - macam jenis</h1>
+    <style>
+       * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+            color: black;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        textarea {
+            resize: vertical; /* Memungkinkan textarea untuk dapat diresize secara vertikal */
+        }
+        
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #45a049;
+            color: black;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            input[type="text"],
+            input[type="email"],
+            textarea {
+                font-size: 14px;
+            }
+        }
+
+        a   {
+                text-decoration: none;
+            }
+    </style>
+</head>
+
+<body>
+    <p>Saya akan menjual beberapa produk kue buatan umi saya yang semoga enak di bawah ini lah jenis - jenis nya :</p>
+
+    <hr>
+
+   
+        <table border="1">
+            <tr>
+            <th>no</th>
+            <th>jenis</th>
+            <th>Harga</th>
+            <th>Status</th>
+            <tr>
+
+            <tr>
+                <td>1</td>
+                <td>Bolen Pisang</td>
+                <td>33.000</td>
+                <td>Pre - Order</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Brownis shinny</td>
+                <td>30.000</td>
+                <td>Ready</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Kue Pisang</td>
+                <td>40.000</td>
+                <td>Masih di oven</td>
+            </tr>
+        </table>
+
+            <hr>
+
+            <form>
+                <label for="data-nama">Nama Pelanggan</label>
+                <input type="text" name="data-nama" id="data-nama">
+                <br>
+                <label for="data_nomor_wa">No WA</label>
+                <input type="text" name="data_nomor_wa" id="data_nomor_wa">
+                <br>
+                <label for="email">Alamat E-mail</label>
+                <input type="text" name="email" id="email">
+                <br>
+                <h4>Kepuasan Pelanggan</h4>
+                <label for="Kepuasan">Puas</label>
+                <input type="radio" name="WNI" id="Puas">
+                <br>
+                <label for="Kepuasan">Tidak Puas</label>
+                <input type="radio" name="WNI" id="Tidak Puas">
+                <br><br>
+                <input type="button" name="kirim" value="kirim">
+            </form>
+            <br>
+            
+            <a href="index.html">beranda</a>
+            
+</body>
+
+
+</html>
